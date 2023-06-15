@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Animated TV Show</title>
+  <link rel="stylesheet" href="D:\Inability website\InabilityWebsite\styles.css">
+  <style>
+    /* CSS styles go here */
+    .page {
+      display: none; /* Hide all pages by default */
+      
+    }
+    .active-page {
+      display: block; /* Show the active page */
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+  <!-- Home page -->
+  <header>
+     <div id ="home" class="container page active-page">
+    <h1>Welcome to the Animated TV Show!</h1>
+    <p>Introduction to your show goes here...</p>
+    <a href="#" onclick="showPage('about')">About the Creator</a>
+    <a href="#" onclick="showPage('characters')">Meet the Characters</a>
+    <a href="#" onclick="showPage('lore')">Learn about the Lore</a>
+    <!--Images for Home page-->
+
+  <div class="image-scroll">
+    <h2>Featured Images</h2>
+    <div class="image-container">
+      <img src="D:\Inability website\Images\Poster.jpg" alt="Image 1">
+  </div>
+</header>
+
+  <!-- Lore page -->
+  <div id="lore" class="page">
+    <h1>Lore of the Story</h1>
+    <p>This is where lore about the story will go.</p>
+    <a href="#" onclick="showPage('home')">Back to Home</a>
+  </div>
+
+  <!-- About page -->
+  <div id="about" class="page">
+    <h1>About the Creator</h1>
+    <p>Information about the creator goes here...</p>
+    <a href="#" onclick="showPage('home')">Back to Home</a>
+  </div>
+
+  
+
+  <!-- Characters page -->
+  <div id="characters" class="page character-pagemain">
+    <h1>Meet the Characters</h1>
+    <ul>
+      <li><a href="#" onclick="showPage('character1')">Character 1</a></li>
+      <li><a href="#" onclick="showPage('character2')">Character 2</a></li>
+      <li><a href="#" onclick="showPage('character3')">Character 3</a></li>
+      <li><a href="#" onclick="showPage('character4')">Character 4</a></li>
+      <li><a href="#" onclick="showPage('character5')">Character 5</a></li>
+      <li><a href="#" onclick="showPage('character6')">Character 6</a></li>
+      <li><a href="#" onclick="showPage('character7')">Character 7</a></li>
+      <li><a href="#" onclick="showPage('character8')">Character 8</a></li>
+      <li><a href="#" onclick="showPage('character9')">Character 9</a></li>
+      <li><a href="#" onclick="showPage('character10')">Character 10</a></li>
+      <li><a href="#" onclick="showPage('character11')">Character 11</a></li>
+      <!-- Add more character links here -->
+    </ul>
+    <a href="#" onclick="showPage('home')">Back to Home</a>
+  </div>
+
+  <!-- Character pages -->
+  <div id="character1" class="page character-page">
+    <h1>Character 1</h1>
+    <p>Information about Character 1 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+
+  <div id="character2" class="page character-page">
+    <h1>Character 2</h1>
+    <p>Information about Character 2 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+
+  <div id="character3" class="page character-page">
+    <h1>Character 3</h1>
+    <p>Information about Character 3 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+
+  <div id="character4" class="page character-page">
+    <h1>Character 4</h1>
+    <p>Information about Character 4 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+
+ 
+  <div id="character5" class="page character-page">
+    <h1>Character 5</h1>
+    <p>Information about Character 5 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+
+  <div id="character6" class="page character-page">
+    <h1>Character 6</h1>
+    <p>Information about Character 6 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+
+  <div id="character7" class="page character-page">
+    <h1>Character 7</h1>
+    <p>Information about Character 7 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+
+  <div id="character8" class="page character-page">
+    <h1>Character 8</h1>
+    <p>Information about Character 8 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+
+  <div id="character9" class="page character-page">
+    <h1>Character9 </h1>
+    <p>Information about Character 9 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+
+  <div id="character10" class="page character-page">
+    <h1>Character10 </h1>
+    <p>Information about Character 10 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+
+
+  <div id="character11" class="page character-page">
+    <h1>Character 11</h1>
+    <p>Information about Character11 goes here...</p>
+    <a href="#" onclick="showPage('characters')">Back to Characters</a>
+  </div>
+ 
+ 
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      var pages = document.querySelectorAll('.page');
+      pages.forEach(function(page) {
+        page.classList.remove('active-page');
+      });
+
+      // Show the selected page
+      var selectedPage = document.getElementById(pageId);
+      selectedPage.classList.add('active-page');
+    }
+  </script>
+</body>
+</html>
